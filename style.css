@@ -15,7 +15,7 @@ a{
     color: rgba(255, 255, 255, .5);
     text-decoration: none;
     border-right:1px solid ;
-    padding: 5px 7px;
+    padding: 5px 10px;
     display: inline;
     font-size: .6em;
     margin: .5em 0;
@@ -29,6 +29,10 @@ a{
     flex-direction: column;
     justify-content: center;
     position: relative;
+    background-image: url("./images/Air\ Jordan\ 32\ «\ Rosso\ Corsa\ ».jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .w2{
     background: rgb(197, 196, 196);
@@ -57,8 +61,13 @@ a{
     flex-direction: column;
     margin: 0 2em;
 }
+.hi-mid-low > a:hover,.hi-mid-low > a:focus{
+    color: rgba(255, 255, 255, 1);
+    transform: translateX(-10px);
+    font-weight: 900;
+}
 .BrandsLogo{
-    height: 20vh;
+    height: 25vh;
     width: 100vw;
     background: rgba(0, 0, 0, 0.547);
     position:absolute;
@@ -66,10 +75,24 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    overflow: hidden;
 }
 .ShoeBrandLogo{
-    height: 5em;
-    width: 5em;
-    background: rgba(255, 255, 255, 0.577);
-    border-radius:20px;
+    height: 6em;
+    width: 6em;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .2;
+}
+.ShoeBrandLogo:hover{
+    opacity: 1;
+}
+.blurLayer{
+    z-index: 100;
+    position:absolute;
+    height: 25vh;
+    width: 100vw;
+    backdrop-filter: blur(4px);
 }
