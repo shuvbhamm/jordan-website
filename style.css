@@ -10,6 +10,7 @@
     margin: 0;
     font-family: Monsterrat;
     color: rgb(246, 246, 246);
+    user-select: none;
 }
 a{
     color: rgba(255, 255, 255, .5);
@@ -34,6 +35,15 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation: bg 3s infinite alternate ease-in-out;
+}
+@keyframes bg {
+    0%{
+        background-position: 30%;
+    }
+    100%{
+        background-position: 70%;
+    }
 }
 .w2{
     /* background: rgb(239, 211, 211); */
